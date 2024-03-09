@@ -36,9 +36,9 @@ Tip 2: you can also add an image using data-image tag -->
                 </a>
             </li>
             <li>
-                <a class="nav-link" href="{{ route('addBook') }}">
+                <a class="nav-link" href="{{ route('issueBook') }}">
                     <!-- <i class="nc-icon nc-bell-55"></i> -->
-                    <p>Add Book</p>
+                    <p>Issue Book</p>
                 </a>
             </li>
             <li>

@@ -25,6 +25,6 @@ Route::get('/membership', function () {
     return view('membership');
 })->name('membership');
 
-Route::get('/addBook', function () {
-    return view('addBook');
-})->name('addBook');
+Route::get('/issueBook', function () {
+    return view('issueBook');
+})->name('issueBook');
