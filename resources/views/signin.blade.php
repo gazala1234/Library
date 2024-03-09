@@ -78,7 +78,7 @@
                 <button type="submit" id="button" class="btn">SIGN IN</button>
             </div>
             <div class="mt-3">
-                <p>NEW USER ? <a href="#" id="signup-link">SIGN UP</a></p>
+                <p>New User ? <a href="#" id="signup-link">Sign Up</a></p>
             </div>
         </div>
     </form>
@@ -111,7 +111,7 @@
                 <button type="submit" id="button" class="btn">SIGN UP</button>
             </div>
             <div class="mt-3">
-                <p>ALREADY HAVE AN ACCOUNT ? <a href="#" id="signin-link">SIGN IN</a></p>
+                <p>Already Have An Account ? <a href="#" id="signin-link">Sign In</a></p>
             </div>
         </div>
     </form>
