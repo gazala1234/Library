@@ -47,8 +47,8 @@
                             Select Book Accession
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#" onclick="showForm('singleItem')">Single Item</a>
-                            <a class="dropdown-item" href="#" onclick="showForm('range')">Range of Accession Number</a>
+                            <a class="dropdown-item" href="#" onclick="showForm('singleItem', 'Single Item')">Single Item</a>
+                            <a class="dropdown-item" href="#" onclick="showForm('range', 'Range of Accession Number')">Range of Accession Number</a>
                         </div>
                     </div>
                     <hr>
@@ -135,6 +135,7 @@
                     </div>
                     
                     <div id="rangeForm" style="display: none;">
+
                         <!-- Range Form -->
                         <h3>Create A Range of Accession Number</h3>
                         <form>
@@ -222,13 +223,16 @@
                     </div>
                     
                     <script>
-                        function showForm(formType) {
+                        function showForm(formType, selectedText) {
                             // Hide all forms first
                             document.getElementById('singleItemForm').style.display = 'none';
                             document.getElementById('rangeForm').style.display = 'none';
                     
                             // Show the selected form
                             document.getElementById(formType + 'Form').style.display = 'block';
+                    
+                            // Update the button text with the selected text
+                            document.getElementById('dropdownMenuButton').textContent = selectedText;
                         }
                     </script>
                     
