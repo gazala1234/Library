@@ -25,11 +25,6 @@ Route::get('/membership', function () {
     return view('membership');
 })->name('membership');
 
-<<<<<<< HEAD
-Route::get('/addBook', function () {
-    return view('addBook');
-})->name('addBook');
-=======
 Route::get('/issueBook', function () {
     return view('issueBook');
 })->name('issueBook');
@@ -37,4 +32,3 @@ Route::get('/issueBook', function () {
 Route::get('/nextIssueBk', function () {
     return view('nextIssueBk');
 })->name('nextIssueBk');
->>>>>>> 56416c3a2415544cc0769cc955df1936f18f0788
