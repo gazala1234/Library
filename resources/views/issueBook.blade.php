@@ -99,7 +99,7 @@
                     <hr>
                     <div class="form-group row" style="padding-left: 350px;">
                         <div class="col-md-2">
-                            <a href="" id="submit" class="btn">Next</a>
+                            <a href="{{ route('nextIssueBk') }}" id="submit" class="btn">Next</a>
                         </div>
                         <div class="col-md-2 ml-3">
                             <button type="reset" id="reset" class="btn">Reset</button>
