@@ -26,6 +26,11 @@
         .button-container{
             text-align: center;
         }
+
+        /* dropdown button style */
+        .dropdown-toggle.fixed-width {
+            min-width: 250px; 
+        }
         
     </style>
 </head>
@@ -42,8 +47,8 @@
                         <h4>ISSUE BOOK</h4>
                     </center>
                     <hr>
-                    <div class="dropdown float-right">
-                        <button type="button" class="btn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown float-right" id="dropbtn">
+                        <button type="button" class="btn dropdown-toggle fixed-width" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Book Accession
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
