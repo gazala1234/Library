@@ -28,3 +28,7 @@ Route::get('/membership', function () {
 Route::get('/issueBook', function () {
     return view('issueBook');
 })->name('issueBook');
+
+Route::get('/nextIssueBk', function () {
+    return view('nextIssueBk');
+})->name('nextIssueBk');
