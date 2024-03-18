@@ -76,27 +76,25 @@
                             </div>
                             <div class="form-group row">
                                 <label for="hlibrary" class="col-md-2 col-form-label">Holding Library</label>
-                                <input type="text" class="form-control col-md-4" id="hlibrary" name="hlibrary" placeholder="Holding Library" required>
-                            </div>
-                            <div class="form-group row">
+                                <input type="text" class="form-control col-md-3" id="hlibrary" name="hlibrary" placeholder="Holding Library" required>
                                 <label for="cno" class="col-md-2 col-form-label">Classification No</label>
                                 <input type="text" class="form-control col-md-3" id="cno" name="cno" placeholder="Classification No" required>
+                            </div>
+                            <div class="form-group row">              
                                 <label for="bno" class="col-md-2 col-form-label">Book No</label>
                                 <input type="text" class="form-control col-md-3" id="bno" name="bno" placeholder="Book No" required>
-                            </div>
-                            <div class="form-group row">
                                 <label for="callno" class="col-md-2 col-form-label">Call No</label>
                                 <input type="text" class="form-control col-md-3" id="callno" name="callno" placeholder="Call No" required>
+                            </div>
+                            <div class="form-group row">
                                 <label for="copyno" class="col-md-2 col-form-label">Copy Number</label>
                                 <input type="text" class="form-control col-md-3" id="copyno" name="copyno" placeholder="Copy Number" required>
+                                <label for="location" class="col-md-2 col-form-label">Location</label>
+                                <input type="text" class="form-control col-md-3" id="location" name="location" placeholder="Location" required>
                             </div>
                             <div class="form-group row">
                                 <label for="ppform" class="col-md-4 col-form-label">Physical/Presentation Form</label>
                                 <input type="text" class="form-control col-md-4" id="ppform" name="ppform" required/>
-                            </div>
-                            <div class="form-group row">
-                                <label for="location" class="col-md-2 col-form-label">Location</label>
-                                <input type="text" class="form-control col-md-4" id="location" name="location" placeholder="Location" required>
                             </div>
                             <hr>
                             <div class="button-container">
@@ -162,7 +160,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="hlibrary" class="col-md-2 col-form-label">Holding Library</label>
-                                <input type="text" class="form-control col-md-4" id="hlibrary" name="hlibrary" placeholder="Holding Library" required>
+                                <input type="text" class="form-control col-md-3" id="hlibrary" name="hlibrary" placeholder="Holding Library" required>
                                 <label for="ncopies" class="col-md-2 col-form-label">Number of Copies</label>
                                 <input type="text" class="form-control col-md-3" id="ncopies" name="ncopies" placeholder="Number of Copies" required>
                             </div>
