@@ -23,7 +23,8 @@
             width: 140%;
             height: 100%;
         }
-        .button-container{
+        /* more disable button style */
+         .button-container{
             text-align: center;
         }
         
@@ -223,6 +224,7 @@
                     </div>
                     
                     <script>
+                        // JavaScript code for dropdowm to show the form based on selected dropdown
                         function showForm(formType, selectedText) {
                             // Hide all forms first
                             document.getElementById('singleItemForm').style.display = 'none';
