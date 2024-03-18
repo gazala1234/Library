@@ -78,7 +78,11 @@
                 <button type="submit" id="button" class="btn">SIGN IN</button>
             </div>
             <div class="mt-3">
+<<<<<<< HEAD
                 <p>NEW USER ? <a href="#" id="signup-link">SIGN UP</a></p>
+=======
+                <p>New User ? <a href="#" id="signup-link">Sign Up</a></p>
+>>>>>>> 56416c3a2415544cc0769cc955df1936f18f0788
             </div>
         </div>
     </form>
@@ -111,7 +115,11 @@
                 <button type="submit" id="button" class="btn">SIGN UP</button>
             </div>
             <div class="mt-3">
+<<<<<<< HEAD
                 <p>ALREADY HAVE AN ACCOUNT ? <a href="#" id="signin-link">SIGN IN</a></p>
+=======
+                <p>Already Have An Account ? <a href="#" id="signin-link">Sign In</a></p>
+>>>>>>> 56416c3a2415544cc0769cc955df1936f18f0788
             </div>
         </div>
     </form>
