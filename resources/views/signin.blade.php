@@ -67,6 +67,10 @@
         @csrf
         <div class="container">
             <div class="form-group">
+                <label for="branch">BRANCH</label><br>
+                <input type="text" class="form-control" id="branch" name="branch" required>
+            </div>
+            <div class="form-group">
                 <label for="username">USERNAME/EMAIL</label><br>
                 <input type="text" class="form-control" id="username" name="username" required>
             </div>
@@ -111,11 +115,7 @@
                 <button type="submit" id="button" class="btn">SIGN UP</button>
             </div>
             <div class="mt-3">
-<<<<<<< HEAD
-                <p>ALREADY HAVE AN ACCOUNT ? <a href="#" id="signin-link">SIGN IN</a></p>
-=======
                 <p>Already Have An Account ? <a href="#" id="signin-link">Sign In</a></p>
->>>>>>> 56416c3a2415544cc0769cc955df1936f18f0788
             </div>
         </div>
     </form>
