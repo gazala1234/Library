@@ -8,12 +8,12 @@
     <title>SIET LIBRARY</title>
     @include('boot')
     <style>
+        /* submit and reset button styling */
         #submit {
             background-color: rgb(111, 56, 195);
             border: none;
             color: white;
         }
-    
         #reset {
             background-color: red;
             border: none;
