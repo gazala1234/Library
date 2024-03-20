@@ -25,10 +25,18 @@ Route::get('/membership', function () {
     return view('membership');
 })->name('membership');
 
+Route::get('/searchBook', function () {
+    return view('searchBook');
+})->name('searchBook');
+
+Route::get('/addBook', function () {
+    return view('addBook');
+})->name('addBook');
+
+Route::get('/nextAddBk', function () {
+    return view('nextAddBk');
+})->name('nextAddBk');
+
 Route::get('/issueBook', function () {
     return view('issueBook');
 })->name('issueBook');
-
-Route::get('/nextIssueBk', function () {
-    return view('nextIssueBk');
-})->name('nextIssueBk');
