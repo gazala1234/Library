@@ -8,23 +8,26 @@
     <title>SIET LIBRARY</title>
     @include('boot')
     <style>
-        #submit {
+       #show{
+        margin-left: 30px;
+       }
+       #or{
+        margin-left: 250px;
+        margin-top: 5px;
+       }
+        /* checkout and reset button styling */
+        #checkout {
             background-color: rgb(111, 56, 195);
             border: none;
             color: white;
-            width: 140%;
-            height: 100%;
+            margin-top: 170%;
         }
-    
         #reset {
             background-color: red;
             border: none;
             color: white;
-            width: 140%;
-            height: 100%;
+            margin-top: 170%;
         }
-
-        
     </style>
 </head>
 
@@ -41,67 +44,75 @@
                     </center>
                     <hr>
                     <div class="form-group row">
-                        <label for="title" class="col-md-2 col-form-label">Title</label>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" id="title" name="title" placeholder="Title"
-                                required>
+                        <div class="form-group row">
+                            <label for="pid" class="col-md-2 col-form-label">Patron ID</label>
+                            <input type="text" class="form-control col-md-5" id="pid" name="pid" required>
+                            <button type="submit" id="show" class="btn col-md-1">Show</button><br>
+                            <p id="or">OR</p>
                         </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" id="stitle" name="stitle" placeholder="Sub Title">
-                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="pname" class="col-md-2 col-form-label">Patron Name</label>
+                        <input type="text" class="form-control col-md-5" id="pname" name="pname" required>    
+                    </div> 
+                    <div class="form-group row">
+                        <label for="card" class="col-md-2 col-form-label">Card</label>
+                        <input type="text" class="form-control col-md-5" id="card" name="card" required>    
+                    </div> 
+                    <div class="form-group row">
+                        <label for="pdetails" class="col-md-2 col-form-label">Patron Details</label>
+                        <textarea class="form-control col-md-5" id="pdetails" name="pdetails" required></textarea>    
                     </div>
                     <hr>
-                    <div class="form-group row">
-                        <label for="author" class="col-md-2 col-form-label">Author Name</label>
-                        <input type="text" class="form-control col-md-3" id="author" name="author" placeholder="Author Name" required>
-                        <label for="isbn" class="col-md-2 col-form-label">ISBN Number</label>
-                        <input type="text" class="form-control col-md-3" id="isbn" name="isbn" placeholder="ISBN Number" required>
-                    </div>
-                    <div class="form-group row">
-                        <label for="edition" class="col-md-2 col-form-label">Edition</label>
-                        <input type="text" class="form-control col-md-3" id="edition" name="edition" placeholder="Edition" required>
-                        <label for="pages" class="col-md-2 col-form-label">Pages/Extent</label>
-                        <input type="text" class="form-control col-md-3" id="pages" name="pages" placeholder="Pages/Extent" required>
-                    </div>
-                    <div class="form-group row">
-                        <label for="name" class="col-md-2 col-form-label">Book Publisher</label>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" id="pub_name" name="pub_name" placeholder="Publisher Name"
-                                required>
+                        <strong>Item being checkedout</strong> 
+                        <div class="form-group row">
+                            <div class="form-group row">
+                                <label for="barcode" class="col-md-2 col-form-label">Barcode</label>
+                                <input type="text" class="form-control col-md-5" id="barcode" name="barcode" required>
+                                <button type="submit" id="show" class="btn col-md-1">Show</button><br>
+                            </div>
+                            <div class="form-group row">
+                                <label for="remarks" class="col-md-2 col-form-label">Remarks</label>
+                                <input type="text" class="form-control col-md-5" id="remarks" name="remarks" required>    
+                            </div> 
                         </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" id="pub_place" name="pub_place" placeholder="Place of Publication">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" id="pub_year" name="pub_year" placeholder="Year of Publication" required>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="subject" class="col-md-2 col-form-label">Subject Name</label>
-                        <input type="text" class="form-control col-md-4" id="subject" name="subject" placeholder="Subject Name" required>
-                    </div>
-                    <label for="name" class="col-form-label">DEWEY DECIMAL CLASSIFICATION_0</label><hr>
-                    <div class="form-group row">
-                        <label for="cno" class="col-md-3 col-form-label">Classification Number</label>
-                        <input type="text" class="form-control col-md-3" id="cno" name="cno" placeholder="Classification Number" required>
-                        <label for="ino" class="col-md-2 col-form-label">Item Number</label>
-                        <input type="text" class="form-control col-md-3" id="ino" name="ino" placeholder="Item Number" required>
-                    </div>
-                    <div class="form-group row">
-                        <label for="location" class="col-md-2 col-form-label">Location</label>
-                        <input type="text" class="form-control col-md-4" id="location" name="location" placeholder="Location" required>
-                    </div>
-                    <div class="form-group row">
-                        <label for="gnotes" class="col-md-2 col-form-label">General Note</label>
-                        {{-- <input type="text" class="form-control col-md-4" id="gnotes" name="gnotes" placeholder="General Notes" required> --}}
-                        <textarea name="gnotes" id="gnotes" placeholder="General note" cols="30" rows="4" style="width: 300px;"></textarea>
+                    <hr>
+                        <strong>Other checkout parameters</strong> 
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="checkbox" name="cd" id="cd">
+                                <label for="cd" class="col-form-label">Change checkout date</label>    
+                            </div>
+                        </div>                        
+                        <div class="form-group row">
+                            <label for="cdate" class="col-md-2 col-form-label">Checkout date</label>
+                            <input type="date" class="form-control col-md-5" id="cdate" name="cdate" required>    
+                        </div> 
+                    <hr>
+                    <strong>Item being checkedout in this transition</strong> 
+                    <div class="table-responsive mt-3">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Sl No</th>
+                                    <th>Barcode</th>
+                                    <th>Book Title</th>
+                                    <th>Due date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <hr>
                     <div class="form-group row" style="padding-left: 350px;">
                         <div class="col-md-2">
-                            <a href="{{ route('nextIssueBk') }}" id="submit" class="btn">Next</a>
+                            <button type="submit" id="checkout" class="btn">Checkout</button>
                         </div>
-                        <div class="col-md-2 ml-3">
+                        <div class="col-md-2">
                             <button type="reset" id="reset" class="btn">Reset</button>
                         </div>
                     </div>
